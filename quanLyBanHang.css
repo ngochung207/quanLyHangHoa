@@ -1,0 +1,51 @@
+.cls-bt{
+    width: 80px;
+    text-align: left;
+    margin-left: 3px;
+}
+h3{
+    text-align: center;
+    font-size: 25px;
+    width: 725px;
+}
+#id-select{
+    width: 178px;
+}
+.cls-tb{
+    width: 140px;
+}
+.maHang {
+    width: 75px;
+}
+.tenHang {
+    width: 247px;
+}
+.dvt {
+    width: 170px;
+}
+.soLuong{
+    width: 170px;
+}
+.lb{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+#id-result-find{
+    text-align: left;
+    font-style: italic;
+    vertical-align: top;
+}
+
+.listLine{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.listData{
+    min-width: 486px;
+}
+.cls-span{
+    flex: 1px;
+}
+

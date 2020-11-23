@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý bán hàng</title>
+    <link rel="stylesheet" href="quanLyBanHang.css" type="text/css">
+
+</head>
+<body>
+    <h3>Quản lý hàng hóa</h3>
+<div>
+    <input type="button" value="Thêm" id="id-bt-them" class="cls-bt" onclick="addProduct();showProduct();clearInput();"/>
+    <input type="button" value="Update" id="id-bt-sua" class="cls-bt" onclick="updateData(document.getElementById('id-code').value);">
+    <input type="text" id="id-code" class="cls-bt">
+    <input type="button" value="Tìm kiếm" id="id-bt-tim" class="cls-bt" style="" onclick="showFindProduct(findProduct(document.getElementById('id-select').value, document.getElementById('id-text-find').value))"/>
+    <select name="" id="id-select">
+        <option value="tieuThuc">----Tiêu thức tìm kiếm----</option>
+        <option value="maHang">Mã hàng</option>
+        <option value="tenHang">Tên hàng</option>
+        <option value="soLuong">Số lượng</option>
+    </select>
+    <input type="text" id="id-text-find">
+</div>
+<table>
+    <tr>
+        <td><label id="id-label-maHang" class="cls-tb lb maHang">Mã hàng</label></td>
+        <td><label id="id-label-tenHang" class="cls-tb lb tenHang">Tên hàng</label></td>
+        <td><label id="id-label-dvt" class="cls-tb lb dvt">Đơn vị tính</label></td>
+        <td><label id="id-label-soLuong" class="cls-tb lb soLuong">Số lượng</label></td>
+        <td><label id="id-label-find" class="cls-tb lb find">Kết quả tìm kiếm</label></td>
+    </tr>
+    <tr>
+        <td><input type="text" id="id-text-maHang" class="cls-tb text maHang"></td>
+        <td><input type="text" id="id-text-tenHang" class="cls-tb text tenHang"></td>
+        <td><input type="text" id="id-text-dvt" class="cls-tb text dvt"></td>
+        <td><input type="text" id="id-text-soLuong" class="cls-tb text soLuong"></td>
+        <td rowspan="2" id="id-result-find"></td>
+    </tr>
+    <tr>
+        <td colspan="4" id="id-result-add"></td>
+    </tr>
+
+</table>
+<script src="quanLyBanHang.js"></script>
+<script src="quanLyBanHang-target.js"></script>
+</body>
+</html>
